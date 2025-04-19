@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | VIBE Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles specific to services page */
+        .service-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/random/1600x900/?event-staff') no-repeat center center/cover;
+            height: 50vh;
+            margin-top: 80px;
+        }
+        
+        .service-detail {
+            padding: 80px 0;
+        }
+        
+        .service-detail:nth-child(even) {
+            background-color: var(--light-color);
+        }
+        
+        .service-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .service-content img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-text h2 {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .service-text ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .service-text ul li {
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .service-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-content.reverse {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="VIBE on white.png" alt="VIBE Agency Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="service-hero hero">
+        <div class="container">
+            <h1>OUR SERVICES</h1>
+            <p class="tagline">Elevating brands through exceptional talent and experiences</p>
+        </div>
+    </section>
+
+    <section class="service-detail" id="brand-ambassadors">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text">
+                    <h2>Brand Ambassadors</h2>
+                    <p>Our brand ambassadors are the driving force behind impactful brand experiences, bringing energy, expertise, and authenticity to every interaction. They are thoroughly trained to represent your brand with excellence and create meaningful connections with your target audience.</p>
+                    <p>Our brand ambassadors are skilled in:</p>
+                    <ul>
+                        <li>Product knowledge and demonstration</li>
+                        <li>Engaging storytelling about your brand</li>
+                        <li>Lead generation and data collection</li>
+                        <li>Creating memorable customer experiences</li>
+                        <li>Driving conversions and sales</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button">Hire Brand Ambassadors</a>
+                </div>
+                <img src="https://source.unsplash.com/random/600x400/?brand-ambassador" alt="Brand Ambassadors">
+            </div>
+        </div>
+    </section>
+
+    <section class="service-detail" id="event-staffing">
+        <div class="container">
+            <div class="service-content reverse">
+                <img src="https://source.unsplash.com/random/600x400/?event-staff" alt="Event Staffing">
+                <div class="service-text">
+                    <h2>Event Staffing</h2>
+                    <p>We provide professional and experienced event staff nationwide, ensuring your events run smoothly and create lasting impressions. Our event staff are selected based on their experience, professionalism, and ability to represent your brand effectively.</p>
+                    <p>Our event staffing services include:</p>
+                    <ul>
+                        <li>Registration and check-in staff</li>
+                        <li>Hosts and greeters</li>
+                        <li>VIP handlers and concierge services</li>
+                        <li>Event coordinators and managers</li>
+                        <li>Promotional staff and brand representatives</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button">Hire Event Staff</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-detail" id="product-demos">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text">
+                    <h2>Product Demos</h2>
+                    <p>Our demo specialists are trained to showcase your products effectively, driving consumer engagement and boosting sales. They have the knowledge and skills to highlight your product's features and benefits in a way that resonates with your target audience.</p>
+                    <p>Our product demo services include:</p>
+                    <ul>
+                        <li>In-store product demonstrations</li>
+                        <li>Trade show and exhibition demos</li>
+                        <li>Food and beverage sampling</li>
+                        <li>Technology and gadget demonstrations</li>
+                        <li>Interactive product experiences</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button">Hire Demo Specialists</a>
+                </div>
+                <img src="https://source.unsplash.com/random/600x400/?product-demo" alt="Product Demos">
+            </div>
+        </div>
+    </section>
+
+    <section class="service-detail" id="promo-models">
+        <div class="container">
+            <div class="service-content reverse">
+                <img src="https://source.unsplash.com/random/600x400/?promotional-model" alt="Promotional Models">
+                <div class="service-text">
+                    <h2>Promo Models</h2>
+                    <p>Our promotional models help elevate your brand presence at events, trade shows, and promotional activities. They are selected for their professionalism, appearance, and ability to engage effectively with your target audience.</p>
+                    <p>Our promotional modeling services include:</p>
+                    <ul>
+                        <li>Trade show and convention models</li>
+                        <li>Promotional event models</li>
+                        <li>Product launch models</li>
+                        <li>Brand spokesmodels</li>
+                        <li>Photoshoot and video production talent</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button">Hire Promo Models</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>READY TO ELEVATE YOUR BRAND?</h2>
+            <p>Let us help you create memorable brand experiences that drive results.</p>
+            <a href="contact.html" class="cta-button">GET A QUOTE TODAY</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="VIBE on black.png" alt="VIBE Agency Logo">
+                    <p>Value. Impact. Brand Excellence.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li>Brand Ambassadors</li>
+                        <li>Event Staffing</li>
+                        <li>Product Demos</li>
+                        <li>Promo Models</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> info@vibeagency.com</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 VIBE Agency. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

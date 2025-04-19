@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | VIBE Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles specific to about page */
+        .about-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/random/1600x900/?team') no-repeat center center/cover;
+            height: 50vh;
+            margin-top: 80px;
+        }
+        
+        .about-section {
+            padding: 80px 0;
+        }
+        
+        .about-section:nth-child(even) {
+            background-color: var(--light-color);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .about-content img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-text h2 {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .value-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        
+        .value-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .team-member {
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        
+        .team-member img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .team-info {
+            padding: 20px;
+        }
+        
+        .team-info h3 {
+            margin-bottom: 5px;
+        }
+        
+        .team-info p {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .team-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            background-color: rgba(0, 0, 0, 0.05);
+            border-radius: 50%;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+        
+        .team-social a:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-content.reverse {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="VIBE on white.png" alt="VIBE Agency Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-hero hero">
+        <div class="container">
+            <h1>ABOUT VIBE</h1>
+            <p class="tagline">Value. Impact. Brand Excellence.</p>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>VIBE Agency was founded with a simple yet powerful mission: to help brands create meaningful connections with their audiences through exceptional talent and experiences.</p>
+                    <p>What started as a small team of passionate brand ambassadors has grown into a nationwide network of professional event staff, brand ambassadors, demo specialists, and promotional models who share our commitment to excellence.</p>
+                    <p>Today, we're proud to partner with leading brands across various industries, helping them bring their vision to life through impactful brand experiences that drive results.</p>
+                </div>
+                <img src="https://source.unsplash.com/random/600x400/?office" alt="VIBE Agency Office">
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <h2 class="text-center">Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>Value</h3>
+                    <p>We deliver exceptional value to our clients through our services, ensuring a strong return on investment for every brand experience we create.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Impact</h3>
+                    <p>We create impactful brand experiences that leave a lasting impression on audiences and drive meaningful results for our clients.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Brand Excellence</h3>
+                    <p>We uphold the highest standards of excellence in everything we do, ensuring that every interaction reflects positively on the brands we represent.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Integrity</h3>
+                    <p>We operate with honesty, transparency, and ethical practices in all our business relationships and interactions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content reverse">
+                <img src="https://source.unsplash.com/random/600x400/?meeting" alt="VIBE Agency Team Meeting">
+                <div class="about-text">
+                    <h2>Our Approach</h2>
+                    <p>At VIBE, we believe that successful brand experiences start with understanding your unique goals, target audience, and brand identity. That's why we take a collaborative approach to every project, working closely with you to develop customized solutions that align with your vision and objectives.</p>
+                    <p>Our process includes:</p>
+                    <ul>
+                        <li>In-depth consultation to understand your needs</li>
+                        <li>Strategic planning and talent selection</li>
+                        <li>Comprehensive training and preparation</li>
+                        <li>Meticulous execution and management</li>
+                        <li>Detailed reporting and analysis</li>
+                    </ul>
+                    <p>This approach ensures that every brand experience we create delivers measurable results and exceeds expectations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <h2 class="text-center">Our Leadership Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://source.unsplash.com/random/300x300/?businesswoman" alt="Sarah Johnson">
+                    <div class="team-info">
+                        <h3>Sarah Johnson</h3>
+                        <p>Founder & CEO</p>
+                        <p>With over 15 years of experience in brand activation and event marketing, Sarah leads VIBE with a passion for creating exceptional brand experiences.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://source.unsplash.com/random/300x300/?businessman" alt="Michael Chen">
+                    <div class="team-info">
+                        <h3>Michael Chen</h3>
+                        <p>Operations Director</p>
+                        <p>Michael oversees all operational aspects of VIBE, ensuring seamless execution of events and staffing solutions nationwide.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://source.unsplash.com/random/300x300/?professional" alt="Jessica Martinez">
+                    <div class="team-info">
+                        <h3>Jessica Martinez</h3>
+                        <p>Talent Director</p>
+                        <p>Jessica leads our talent recruitment, training, and management, ensuring we provide the best brand ambassadors and event staff for every project.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://source.unsplash.com/random/300x300/?executive" alt="David Wilson">
+                    <div class="team-info">
+                        <h3>David Wilson</h3>
+                        <p>Client Relations Director</p>
+                        <p>David works closely with our clients to understand their needs and develop customized solutions that deliver exceptional results.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>READY TO WORK WITH US?</h2>
+            <p>Let's create exceptional brand experiences together.</p>
+            <a href="contact.html" class="cta-button">GET IN TOUCH</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="VIBE on black.png" alt="VIBE Agency Logo">
+                    <p>Value. Impact. Brand Excellence.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li>Brand Ambassadors</li>
+                        <li>Event Staffing</li>
+                        <li>Product Demos</li>
+                        <li>Promo Models</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> info@vibeagency.com</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 VIBE Agency. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
